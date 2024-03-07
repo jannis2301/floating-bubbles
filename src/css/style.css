@@ -55,23 +55,19 @@ body {
 @keyframes float {
   0% {
     bottom: calc(var(--bubble-size) * -1);
-    transform: translateX(0px);
   }
   100% {
-    bottom: 1000px;
-    transform: translateX(50px);
+    bottom: calc(120% + var(--bubble-size));
   }
 }
 
 .FB-Bubble {
   --bubble-size: 100px;
-  --bubble-position: 50%;
-  --animation-duration: 10s;
+  --animation-duration: 12s;
   width: var(--bubble-size);
   height: var(--bubble-size);
   border-radius: 50%;
   position: absolute;
-  left: var(--bubble-position);
   bottom: calc(var(--bubble-size) * -1);
   background: rgba(255, 255, 255, 0.3);
   box-shadow: 0 0 25px var(--light-blue) inset;
